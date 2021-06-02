@@ -1,4 +1,4 @@
-/* Google Font CDN Link */
+/* Navbar */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -164,12 +164,13 @@ body{
   pointer-events: auto
 }
 
+/* Content */
 .home_content{
   position: absolute;
   height: 100%;
   width: calc(100% - 78px);
   left: 78px;
-  background: #7B7D8A;
+  background: #272442;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2px);
   transition: all 0.5s ease;
 }
@@ -179,7 +180,7 @@ body{
 .home_content .text{
   font-size: 25px;
   font-weight: 500;
-  color: #1d1b31;
+  color: #fff;
   margin: 12px;
 }
 .sidebar.active ~ .home_content{
@@ -189,4 +190,56 @@ body{
 
 .logo_content a {
   text-decoration: none;
+}
+/* Insta, Nhentai input */
+input,
+button {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 250px;
+}
+/* Input Box */
+.border-neon {
+  background-color: transparent;
+  border: 2px solid pink;
+  color: pink;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+::placeholder {
+  color: #ff94b8;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+/*  READ Button */
+.border-neon {
+  background-color: transparent;
+  border: 2px solid pink;
+  color: pink;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.border-neon:hover,
+.border-neon:focus {
+  -webkit-box-shadow: inset 0px 0px 8px 3px #ff94b8;
+  box-shadow: 0px 0px 10px 3px #ff94b8, inset 0px 0px 10px 3px #ff94b8;
+  border-color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff94b8, 0 0 40px #ff94b8,
+    0 0 50px #ff94b8, 0 0 60px #ff94b8, 0 0 70px #ff94b8;
+}
+/* Center elements */
+.button_container{
+  display: flex;
+ justify-content: center;
+}
+/* Discord Bot Page */
+.invite_container {
+ display: flex;
+ justify-content: center;
 }
