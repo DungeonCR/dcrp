@@ -225,7 +225,12 @@ body {
   width: 50px;
   cursor: pointer;
 }
-.mic-icon {
+#nhentaiButton {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
   width: 0px;
   transition: 0.5s;
   transition-delay: 0.5s;
@@ -243,7 +248,8 @@ input {
   width: 500px;
   padding: 12px 20px;
 }
-.active .mic-icon{
+.active #nhentaiButton{
+  display: block;
   width: 30px;
 }
 .active #searchBox{

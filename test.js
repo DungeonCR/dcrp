@@ -1,15 +1,12 @@
-let btn = document.querySelector("#btn");
-let sidebar = document.querySelector(".sidebar");
-let searchBtn = document.querySelector(".bx-search");
+var input = document.getElementById("nhentaiInput");
 
-btn.onclick = function() {
-sidebar.classList.toggle("active");
-if(btn.classList.contains("bx-menu")){
-    btn.classList.replace("bx-menu" , "bx-menu-alt-right");
-    }else{
-    btn.classList.replace("bx-menu-alt-right", "bx-menu");
-    }
-}
-searchBtn.onclick = function() {
-    sidebar.classList.toggle("active");
-}
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("myBtn").click();
+  }
+});

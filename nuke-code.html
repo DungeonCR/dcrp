@@ -7,7 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
-<body---->
+<body>
   <div class="sidebar">
 
       <div class="logo_content">
@@ -61,15 +61,21 @@
     <div class="hero">
         <div id="searchBox">
             <img src="nhentai.png" id="nhentaiIcon">
-            <input type="text" placeholder="Article Code">
-            <img src="google_mic.png" class="mic-icon">
+            <input id="nhentaiInput" type="text" placeholder="Article Code">
+            <button id="nhentaiButton">🍅</button>
+            <!--<img src="google_mic.png" class="mic-icon">-->
         </div>
     </div>
-
-  </div>
-  <script src="test.js"></script>
-  <script src="nhentai.js"></script>
-  <script src="search.js"></script>
-
+    
+    <script src="nhentai.js"></script>
+    <script src="search.js"></script>
+    <!--<script>var input = document.getElementById("nhentaiInput");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("nhentaiButton").click();
+            }
+        });
+    </script>-->
 </body>
 </html>
