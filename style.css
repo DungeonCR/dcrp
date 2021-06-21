@@ -244,14 +244,14 @@ input {
   outline: none;
   transition: 1s;
 }
-.active input{
-  width: 500px;
+.active input {
+  width: 250px;
   padding: 12px 20px;
 }
-.active #nhentaiButton{
+.active #nhentaiButton {
   display: block;
   width: 30px;
 }
-.active #searchBox{
+.active #searchBox {
   padding: 0px;
 }
