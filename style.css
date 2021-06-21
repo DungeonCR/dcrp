@@ -225,16 +225,7 @@ body {
   width: 50px;
   cursor: pointer;
 }
-#nhentaiButton {
-  display: none;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  width: 0px;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-}
+
 input {
   font-size: 20px;
   color: #fff;
@@ -245,12 +236,23 @@ input {
   transition: 1s;
 }
 .active input {
-  width: 200px;
+  width: 170px;
   padding: 12px 20px;
 }
+#nhentaiButton {
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #11101d;
+  color: white;
+  font-size: 22px;
+  height: 0px;
+  width: 0px;
+  text-align: center;
+}
 .active #nhentaiButton {
-  display: block;
-  width: 30px;
+  height: 50px;
+  width: 50px;
 }
 .active #searchBox {
   padding: 0px;
