@@ -235,6 +235,11 @@ input {
   outline: none;
   transition: 1s;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .active input {
   width: 170px;
   padding: 12px 20px;
