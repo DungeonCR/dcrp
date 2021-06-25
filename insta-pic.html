@@ -55,11 +55,15 @@
 
   <div class="home_content">
     <div class="text">Download Instagramm pic(Not finished yet)</div>
-    <div class="button_container">
-        <input id="insta-input" type="text" class="border-neon" placeholder="url here" autocomplete="off">
-        <button id="insta-btn" class="border-neon">CHECK</button>
-    </div>
-  </div>
+
+    <input type="text" value="" placeholder="Paste link here...">
+    <button class="search" onclick="getMedia()">Get</button>
+    <section class="result">
+    <div class="image-placeholder"></div>
+    <p> Copy image or video link from Instagram and put it on the field given on the top. </p>
+    </section>
+
+  <script  src="function.js"></script>
   <script src="sidebar.js"></script>
   <script src="insta.js"></script>
 </body>
